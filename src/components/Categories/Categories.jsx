@@ -37,15 +37,15 @@ const categories = [
   { id: "category_010", name: "Dry Fruits, Masala & Oil", img: category_010 },
   { id: "category_011", name: "Sauces & Spreads", img: category_011 },
   { id: "category_012", name: "Chicken, Meat & Fish", img: category_012 },
-  { id: "category_013", name: "Paan Corner", img: category_013 },
-  { id: "category_014", name: "Organic & Premium", img: category_014 },
+  // { id: "category_013", name: "Paan Corner", img: category_013 },
+  // { id: "category_014", name: "Organic & Premium", img: category_014 },
   { id: "category_015", name: "Baby Care", img: category_015 },
-  { id: "category_016", name: "Pharma & Wellness", img: category_016 },
+  // { id: "category_016", name: "Pharma & Wellness", img: category_016 },
   { id: "category_017", name: "Cleaning Essentials", img: category_017 },
   { id: "category_018", name: "Home & Office", img: category_018 },
   { id: "category_019", name: "Personal Care", img: category_019 },
   { id: "category_020", name: "Pet Care", img: category_020 },
-  { id: "category_021", name: "Fashion & Accessories", img: category_021 },
+  // { id: "category_021", name: "Fashion & Accessories", img: category_021 },
 ];
 
 export default function Categories() {

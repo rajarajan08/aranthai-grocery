@@ -1,4 +1,6 @@
-import Categories from "../../components/Categories/Categories.jsx";
+import Categories from "../../components/categories/categories.jsx";
+import HorizondalScroll from "../../components/HorizondalScroll/HorizondalScroll.jsx";
+import { yourDailyFresh } from "../../assets/jsons/jsons.jsx";
 
 function Home() {
   return (
@@ -15,6 +17,7 @@ function Home() {
       </div>
 
       <Categories />
+      <HorizondalScroll title="Your Daily Fresh needs" items={yourDailyFresh} />
     </div>
   );
 }
