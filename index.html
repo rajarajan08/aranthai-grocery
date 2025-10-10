@@ -3,10 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <script type="text/javascript">
-      // If user is visiting a deep route, save it before redirect
       if (
         sessionStorage.redirect === undefined &&
-        location.pathname !== "/aranthai-grocery"
+        !location.pathname.startsWith("/aranthai-grocery")
       ) {
         sessionStorage.redirect = location.href;
       }
