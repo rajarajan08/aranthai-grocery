@@ -3,16 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <script type="text/javascript">
-      if (
-        sessionStorage.redirect === undefined &&
-        !location.pathname.startsWith("/aranthai-grocery")
-      ) {
-        sessionStorage.redirect = location.href;
+      // If user came from 404 redirect, restore their path
+      const redirect = sessionStorage.redirect;
+      if (redirect) {
+        delete sessionStorage.redirect;
+        history.replaceState(null, null, redirect);
       }
     </script>
-    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aranthai-Grocery</title>
+    <title>Aranthai Grocery</title>
     <script type="module" crossorigin src="/aranthai-grocery/assets/index-CiubGAGY.js"></script>
     <link rel="stylesheet" crossorigin href="/aranthai-grocery/assets/index-51GtFHYZ.css">
   </head>

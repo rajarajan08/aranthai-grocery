@@ -1,18 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <script type="text/javascript">
-      // Preserve the original path and query
-      var redirect = sessionStorage.redirect;
-      delete sessionStorage.redirect;
+      // Save current URL (full path + query) before redirect
+      const redirectTo = window.location.href;
+      sessionStorage.redirect = redirectTo;
 
-      // If this is a reload, go to the stored path
-      if (redirect && redirect !== location.href) {
-        history.replaceState(null, null, redirect);
-      }
+      // Redirect back to React root (must include trailing slash!)
+      window.location.replace("/aranthai-grocery/");
     </script>
-    <meta http-equiv="refresh" content="0; url=/aranthai-grocery/" />
   </head>
   <body></body>
 </html>
