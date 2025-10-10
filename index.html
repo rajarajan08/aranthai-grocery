@@ -2,10 +2,19 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <script type="text/javascript">
+      // If user is visiting a deep route, save it before redirect
+      if (
+        sessionStorage.redirect === undefined &&
+        location.pathname !== "/aranthai-grocery"
+      ) {
+        sessionStorage.redirect = location.href;
+      }
+    </script>
     <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aranthai-Grocery</title>
-    <script type="module" crossorigin src="/aranthai-grocery/assets/index-287yNOxR.js"></script>
+    <script type="module" crossorigin src="/aranthai-grocery/assets/index-CiubGAGY.js"></script>
     <link rel="stylesheet" crossorigin href="/aranthai-grocery/assets/index-51GtFHYZ.css">
   </head>
   <body>

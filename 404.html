@@ -1,7 +1,18 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="refresh" content="0; url=/aranthai-grocery" />
+    <meta charset="utf-8" />
+    <script type="text/javascript">
+      // Preserve the original path and query
+      var redirect = sessionStorage.redirect;
+      delete sessionStorage.redirect;
+
+      // If this is a reload, go to the stored path
+      if (redirect && redirect !== location.href) {
+        history.replaceState(null, null, redirect);
+      }
+    </script>
+    <meta http-equiv="refresh" content="0; url=/" />
   </head>
   <body></body>
 </html>
