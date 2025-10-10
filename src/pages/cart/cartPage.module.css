@@ -1,0 +1,158 @@
+.cartContainer {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 16px;
+}
+
+.cartTitle {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.emptyCart {
+  text-align: center;
+  font-size: 18px;
+  color: #555;
+}
+
+.cartItems {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  height: 50vh;
+  overflow: scroll;
+
+  /* display: flex;
+  flex-direction: column;
+  gap: 16px;
+  height: 50vh;
+  overflow: scroll;
+  padding: 20px;
+  background-color: #6bb7581c;
+  border-radius: 12px;
+  border: 1px solid #639f14;
+  box-shadow: 1px 1px 6px 0px #8c8f8a; */
+
+  padding: 20px;
+  border-radius: 15px;
+  border: 1px solid #ededed;
+}
+
+.cartItem {
+  display: flex;
+  gap: 16px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 12px;
+  align-items: center;
+  background: #fafafa;
+}
+
+.cartImg {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+
+.cartDetails {
+  flex: 1;
+}
+
+.cartWeight {
+  font-size: 14px;
+  color: #777;
+}
+
+.cartPrice {
+  font-weight: bold;
+  margin-top: 4px;
+}
+
+.cartSubtotal {
+  margin: 6px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.cartControls {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.cartControls button {
+  background: #28a745;
+  color: white;
+  border: none;
+  padding: 4px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.cartControls button:hover {
+  background: #218838;
+}
+
+.cartSummary {
+  margin-top: 24px;
+  padding: 16px;
+  border-top: 2px solid #ddd;
+  text-align: right;
+}
+
+.checkoutBtn {
+  margin-top: 10px;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  border: 1px solid;
+  background-color: #28a745; /* Nice green fill */
+  color: #fff; /* White text */
+  width: 300px;
+
+  margin-top: 10px;
+  background: #fff;
+  color: #1b5e20;
+  padding: 10px 10px 12px 25px;
+  border-radius: 8px;
+  font-size: 24px;
+  cursor: pointer;
+  border: 1px solid;
+  background-color: #28a745;
+  color: #fff;
+  width: 200px;
+}
+
+.addMoreBtn {
+  margin-top: 10px;
+  background: #219721;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.checkoutBtn:hover {
+  background: #99c98d;
+}
+
+.checkoutBtn:hover {
+  background-color: #218838; /* Slightly darker green on hover */
+  transform: translateY(-2px); /* Subtle lift effect */
+}
+
+h3 {
+  font-size: 14px;
+}
+
+p {
+  font-size: 12px;
+}
+
+.backArrow {
+  color: green;
+  margin-right: 8px;
+}

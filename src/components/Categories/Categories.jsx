@@ -23,8 +23,9 @@ import category_018 from "../../assets/categories/category_018.png";
 import category_019 from "../../assets/categories/category_019.png";
 import category_020 from "../../assets/categories/category_020.png";
 import category_021 from "../../assets/categories/category_021.png";
+import { useNavigate } from "react-router-dom";
 
-const categories = [
+export const categories = [
   { id: "category_001", name: "Vegetables & Fruits", img: category_001 },
   { id: "category_002", name: "Dairy & Breakfast", img: category_002 },
   { id: "category_003", name: "Munchies", img: category_003 },
@@ -49,10 +50,14 @@ const categories = [
 ];
 
 export default function Categories() {
+  const navigate = useNavigate();
   return (
     <div className="categories">
       {categories.map((cat) => (
-        <div className="cardContainer">
+        <div
+          className="cardContainer"
+          onClick={() => navigate(`/view?id=${cat.id}`)}
+        >
           <div key={cat.id} className="card">
             <img src={cat.img} alt={cat.name} width="100%" />
           </div>

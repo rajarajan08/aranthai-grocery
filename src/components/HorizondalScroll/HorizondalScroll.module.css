@@ -44,9 +44,6 @@
 }
 
 .discount {
-  position: absolute;
-  top: 8px;
-  left: 8px;
   background: #0077ff;
   color: white;
   font-size: 12px;
@@ -109,4 +106,45 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2e7d32; /* green */
+  border-radius: 6px;
+  overflow: hidden;
+  height: 32px;
+  width: 80px;
+}
+
+.counter button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.counter span {
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  width: 30px;
+  text-align: center;
+}
+
+.badges {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  left: -12px;
+  top: -12px;
 }
