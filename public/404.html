@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <script type="text/javascript">
+      // Save current URL (full path + query) before redirect
+      const redirectTo = window.location.href;
+      sessionStorage.redirect = redirectTo;
+
+      // Redirect back to React root (must include trailing slash!)
+      window.location.replace("/aranthai-grocery/");
+    </script>
+  </head>
+  <body></body>
+</html>

@@ -2,9 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+    <script type="text/javascript">
+      // If user came from 404 redirect, restore their path
+      const redirect = sessionStorage.redirect;
+      if (redirect) {
+        delete sessionStorage.redirect;
+        history.replaceState(null, null, redirect);
+      }
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aranthai-Grocery</title>
+    <title>Aranthai Grocery</title>
   </head>
   <body>
     <div id="root"></div>

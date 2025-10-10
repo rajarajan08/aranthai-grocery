@@ -17,16 +17,19 @@ export default function CategoryTabsView() {
   const navigate = useNavigate();
   const searchParams = new URLSearchParams(location.search);
   const paramValue = searchParams.get("id");
-  const [selectedCategory, setSelectedCategory] = useState(paramValue);
+  const [selectedCategory, setSelectedCategory] = useState(
+    paramValue ?? categories[0].id
+  );
   const { cart, addToCart, removeFromCart } = useCart();
 
   return (
-    <div style={{ padding: "16px" }}>
+    <div style={{ padding: "16px 0" }}>
       <div
         style={{
           display: "flex",
           alignItems: "center",
           paddingBottom: "16px",
+          paddingLeft: "16px",
           borderBottom: "1px solid rgb(221, 221, 221)",
         }}
         onClick={() => navigate(-1)}
@@ -162,8 +165,8 @@ export default function CategoryTabsView() {
             </div>
           ) : (
             <h3>
-              {categories.find((d) => d.id === selectedCategory).name} yet to be
-              added
+              {categories.find((d) => d.id === selectedCategory)?.name} yet to
+              be added
             </h3>
           )}
         </div>

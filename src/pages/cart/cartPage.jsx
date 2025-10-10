@@ -21,16 +21,16 @@ const CartPage = () => {
 
     const message = cart
       .map(
-        (item) =>
-          `*${item.name}* (${item.qty} × ₹${item.price}) = ₹${
+        (item, index) =>
+          `*${index + 1}.${item.name}* (${item.qty}) = ₹${
             item.qty * item.price
           }`
       )
-      .join("\n __________________________ \n");
+      .join("\n");
 
     const total = cart.reduce((sum, item) => sum + item.price * item.qty, 0);
 
-    const fullMessage = `*My Grocery Order:*\n -------------------  \n${message}\n -------------------  \n*Total: ₹${total}*`;
+    const fullMessage = `*My Grocery Order:*\n -------------------  \n${message}\n -------------------  \n*Total: ₹${total}* \n\n Check the Order list and send this message to place order.`;
 
     const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
       fullMessage
